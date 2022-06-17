@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/StaffStyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/5066b12b5a.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <title> Staff Appointment Interface</title>
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="Images/logoside.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Bookdoc</span>
+                    <span class="profession">Staff</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+
+                <li class="nav-link">
+                    <a href="Staff_Dashboard.html">
+                        <i class='bx bx-home-alt icon'></i>
+                        <span class="text nav-text">Dashboard</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="Staff_Appt1.html">
+                        <i class='bx bxs-calendar icon'  ></i>
+                        <span class="text nav-text">Appointment</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="Staff_SchedAppt.html">
+                        <i class='bx bxs-calendar-plus icon'></i>
+                        <span class="text nav-text">Appt. Schedule</span>
+                    </a>
+                </li>
+     
+                <li class="nav-link">
+                    <a href="Staff_Rev.html">
+                        <i class='bx bxs-star icon'></i>
+                        <span class="text nav-text">Reviews</span>
+                    </a>
+                </li>
+
+
+
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="Staff_Login.html">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+
+        <div class="cont">
+            <div class="text"> <h3><b>Appointment Schedule</b></h3></div>
+
+            <div class="container">
+
+                <div class="col">
+                    <div class="p-3 border bg-light" id="box1">
+
+
+                        <div class="row">
+                            <div class="col-12  mb-2">
+                                <h5><b>Edit appointment time</b></h5>
+                            </div>
+                            <div class="col-4  mb-2"><input type="date" class="form-control form-control-sm" value="2022-06-17">
+                            </div>
+                            <div class="col-2  mb-2"><button type="button" class="btn btn-primary"
+                                    onclick="location.href='Staff_SchedAppt.html';">Search</button></div>
+                            <div class="col-xl-4  mb-2">
+                                <h5><b>Month of June 2022</b></h5>
+                            </div>
+
+
+                        </div>
+
+                        <br>
+
+                        <div class="col-sm-12 mb-3 ">
+
+                            <div class="who1" style="overflow-x:auto;">
+                                <table class="table table-bordered caption-top" id="tableapp">
+                                    <thead style="text-align:center">
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Mon, Jun 13</th>
+                                            <th scope="col">Tue, Jun 14</th>
+                                            <th scope="col">Wed, Jun 15</th>
+                                            <th scope="col">Thu, Jun 16</th>
+                                            <th scope="col">Fri, Jun 17</th>
+                                            <th scope="col">Sat, Jun 18</th>
+                                            <th scope="col">Sun, Jun 19</th>
+                                            <th scope="col">Mon, Jun 20</th>
+                                            <th scope="col">Tue, Jun 21</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="09:30 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="09:20 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="10:00 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="09:30 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="10:30 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="09:30 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" ></td>
+                                            <td style="text-align:center"><input type="text" class="text2" ></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="09:30 am"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="09:50 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="09:40 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="10:30 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="09:50 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="10:55 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="09:50 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" ></td>
+                                            <td style="text-align:center"><input type="text" class="text2" ></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="09:50 am"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="10:20 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="10:00 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="10:50 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="10:20 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="11:25 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="10:20 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" ></td>
+                                            <td style="text-align:center"><input type="text" class="text2" ></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="10:20 am"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4</th></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="10:40 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="10:20 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="11:20 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="10:40 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="11:45 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="10:40 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" ></td>
+                                            <td style="text-align:center"><input type="text" class="text2" ></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="10:40 am"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">5</th></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="11:00 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="10:40 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="11:40 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="11:00 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="01:00 pm"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="11:00 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" ></td>
+                                            <td style="text-align:center"><input type="text" class="text2" ></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="11:00 am"></td>
+                                        </tr>
+                                     
+                                        <tr>
+                                            <th scope="row">6</th></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="11:20 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="11:00 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="01:10 pm"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="11:20 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="01:20 pm"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="11:20 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" ></td>
+                                            <td style="text-align:center"><input type="text" class="text2" ></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="11:20 am"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">7</th></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="11:40 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="11:20 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="01:30 pm"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="11:40 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="01:40 pm"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="11:40 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" ></td>
+                                            <td style="text-align:center"><input type="text" class="text2" ></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="11:40 am"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">8</th></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="01:10 pm"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="11:40 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="01:50 pm"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="01:00 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="02:05 pm"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="01:05 pm"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" ></td>
+                                            <td style="text-align:center"><input type="text" class="text2" ></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="01:10 pm"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">9</th></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="01:20 pm"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="01:00 pm"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="02:10 pm"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="01:20 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="02:35 pm"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="01:35 pm"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" ></td>
+                                            <td style="text-align:center"><input type="text" class="text2" ></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="01:30 pm"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">10</th></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="01:40 pm"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="01:20 pm"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="02:30 pm"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="01:40 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="02:55 pm"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="01:55 pm"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" ></td>
+                                            <td style="text-align:center"><input type="text" class="text2" ></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="01:50 pm"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">11</th></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="02:00 pm"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="01:40 pm"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="02:55 pm"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="02:00 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="03:25 pm"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="02:20 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" ></td>
+                                            <td style="text-align:center"><input type="text" class="text2" ></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="02:20 pm"></td>
+                                        </tr>
+                            
+                                        <tr>
+                                            <th scope="row">12</th></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="02:20 pm"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="02:00 pm"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="03:25 pm"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="02:20 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="03:50 pm"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="02:40 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" ></td>
+                                            <td style="text-align:center"><input type="text" class="text2" ></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="02:40 pm"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">13</th></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="02:40 pm"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="02:20 pm"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="03:55 pm"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="02:40 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="04:20 pm"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="03:00 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" ></td>
+                                            <td style="text-align:center"><input type="text" class="text2" ></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="02:40 pm"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">14</th></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="03:00 pm"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="02:40 pm"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="02:19 pm"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="03:00 pm"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="04:20 pm"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="03:00 am"></td>
+                                            <td style="text-align:center"><input type="text" class="text2" ></td>
+                                            <td style="text-align:center"><input type="text" class="text2" ></td>
+                                            <td style="text-align:center"><input type="text" class="text2" value="02:40 pm"></td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <th scope="row" id="see"></th>
+                                            <td><span class="grayl"><a href="#">See more.......</a></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><span class="f6">
+                                                    < <button type="button" class="btn4" onclick="window.location.href='#'" >></button>
+                                                </span></td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+                            </div>
+                            <form action="#" onsubmit="myFunction()">
+                            <button type="submit" class="btn btn-primary" >Save</button> <button type="button" class="btn btn-danger" data-bs-dismiss="modal" >Cancel</button></form>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+            
+
+
+
+            <!-----------------------------end of cont------------------------------->
+            <br>
+            <center>
+                <hr style="height:2px; width: 95%;border-width:0;color:gray;background-color:gray">
+            </center>
+
+
+        </div>
+
+        <div class="navii">
+
+            <nav class="navbar navbar-light navbar-expand-md">
+                <div class="container-fluid"><a class="navbar-brand"></a>
+                    <div id="navcol-1">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="copy">
+                                ⓒ 2022 Bookdoc
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+
+    </section>
+
+
+    <script>
+
+function myFunction() {
+            alert("Edit Record Successfully !!!");
+        }
+
+     
+
+        const body = document.querySelector('body'),
+            sidebar = body.querySelector('nav'),
+            toggle = body.querySelector(".toggle"),
+            searchBtn = body.querySelector(".search-box"),
+            modeSwitch = body.querySelector(".toggle-switch"),
+            modeText = body.querySelector(".mode-text");
+
+
+        toggle.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+        })
+
+        searchBtn.addEventListener("click", () => {
+            sidebar.classList.remove("close");
+        })
+
+
+
+    </script>
+
+
+</body>
+
+</html>

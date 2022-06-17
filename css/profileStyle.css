@@ -1,0 +1,299 @@
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#userr {
+    font-size: 40px;
+}
+
+
+nav ul li {
+    font-size: 16px;
+    margin-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #00234B;
+}
+
+.navi{
+    background-color: #E8E3F4;
+}
+
+
+nav ul li a:hover {
+    background: #cdc6db;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.nav-link a {
+    color: #00234B;
+}
+
+.navi {
+    padding: 0 10px 0 10px;
+}
+
+.col-md-7{
+    border: 1px solid black;
+}
+
+.col-md-5{
+    border: 1px solid black;
+}
+
+.section1{
+    background-color: white;
+    height: auto;
+    width: 100%;
+    color: #00234B;
+
+}
+body{
+    background-color: white;
+}
+
+.section3{
+    width: 100%;
+    background-color: white;
+    float: left;
+    color: #00234B;
+}
+.sec{
+    width: 100%;
+    height: 850px;
+    background-color: #ffffff;
+}
+
+.sec1{
+    width: 60%;
+    height: auto;
+    float: left;
+    padding: 3%;
+    background-color: white;
+    overflow: hidden;
+    transition: none;
+}
+
+.sec2{
+    width: 40%;
+    float: left;
+    height: auto;
+    padding-top: 20px;
+    background-color: white;
+    overflow: hidden;
+    transition: none;
+}
+
+
+
+.sec3{
+    width: 60%;
+    height: auto;
+    float: left;
+    padding: 1% 3% 3% 3%;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    transition: none;
+}
+
+#insurancelogo{
+    height: 20px;
+    width: 80px;
+}
+#insurancelogos{
+    height: 25px;
+    width: 80px;
+}
+.table3 img {
+    height: 150px;
+    width: 150px;
+}
+.tab1{
+    padding-left: 20px;
+}
+
+.f7 h5{
+    color: gray;
+}
+
+.btn3{
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.links h5{
+    color: #00234B;
+}
+
+.links h5:hover{
+    text-decoration: underline;
+}
+
+.btn3:hover{
+    text-decoration: underline;
+}
+.litle{
+    font-size: 13px;
+}
+#logos{
+    color: rgb(224, 78, 78);
+    font-size: 18px;
+}
+
+#logos1{
+    color: rgb(224, 78, 78);
+    font-size: 20px;
+    margin: 2px;
+}
+
+.f2 {
+    color: rgb(121, 117, 117);
+    font-size: 16px;
+}
+
+.row h5{
+    color: #00234B;
+}
+
+.btn4{
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+    background-color: white;
+    color:#00234B;
+    border: 1px solid #00234B;
+}
+
+
+.btn4:hover{
+    color:white;
+    background-color: #00234B;
+}
+
+
+.who{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 7px;
+    border: 1px solid rgb(205, 205, 205);
+}
+
+.who1{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid rgb(205, 205, 205);
+}
+/*************************************************************************************/
+
+
+.foot {
+    background-color: #E8E3F4;
+    color: #00234B;
+    width: 100%;
+    float: left;
+}
+
+
+
+.link {
+    text-decoration: none;
+    color: #00234B;
+}
+
+#copyright {
+    color: #00234B;
+}
+
+.btn2 {
+    background-color: #E8E3F4;
+    color: #00234B;
+    padding: 7px;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+.btn2:hover {
+    background-color: #00234B;
+    color: #ffffff;
+
+}
+
+.btn5 {
+    background-color: #E8E3F4;
+    color: #00234B;
+    padding: 7px;
+    border-radius: 3px;
+}
+
+.btn5:hover {
+    background-color: #00234B;
+    color: #ffffff;
+
+}
+
+@media screen and (max-width: 1050px) {
+    .sec1{
+        width: 100%;
+    }
+    .sec2{
+        width: 100%;
+    }
+    .sec3{
+        width: 100%;
+    }
+
+    .sec4{
+        display: none;
+    }
+}
+
+.btn5{
+    background-color: white;
+    color:rgb(87, 204, 217);
+
+}
+
+#trust{
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    padding: 3px;
+    padding-left: 20px;
+}
+
+.btns{
+    height: 32px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #E8E3F4;
+    border-radius: 5px;
+}
+
+#logo1{
+    color: rgb(224, 78, 78);
+    font-size: 16px;
+}
+
+.sec4{
+    width: 40%;
+    float: left;
+    height: 2080px;
+    background-color: white;
+}
+
+.card-body{
+    background-color: #F3F3F3;
+
+}
+

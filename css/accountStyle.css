@@ -1,0 +1,226 @@
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #00234B;
+}
+
+body {
+    background-color: #7373ba;
+}
+
+#userr {
+    font-size: 40px;
+}
+
+#user1 {
+    font-size: 100px;
+}
+
+#userrr {
+    font-size: 30px;
+}
+
+a.nav-link {
+    color: #00234B;
+}
+
+a.nav-link.active{
+    color: #00234B;
+}
+
+.chriss{
+    font-size: 17px;
+}
+nav ul li {
+    font-size: 16px;
+    margin-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #00234B;
+}
+
+.navi {
+    background-color: #E8E3F4;
+}
+
+
+nav ul li a:hover {
+    background: #cdc6db;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.nav-link a {
+    color: #00234B;
+}
+
+.navi {
+    padding: 0 10px 0 10px;
+}
+
+.button3 {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: #f3f3f3;
+}
+#dropdownMenuButton1{
+    padding:0;
+    margin-top: 10px;
+}
+
+.table1 td{
+    padding: 10px;
+}
+.small1{
+    font-size: 15px;
+    color: #9d9c9c;
+}
+
+.btn4{
+    width: 100%;
+    border-radius: 5px;
+    padding: 3px;
+    background-color: white;
+    color:#00234B;
+    border: 1px solid #00234B;
+}
+
+
+.btn4:hover{
+    color:white;
+    background-color: #00234B;
+}
+
+.circle{
+    padding: 5px;
+    border-radius: 25px;
+    padding-left: 14px;
+    padding-right: 14px;
+    font-size: 20px;
+    background-color: #f3f3f3;
+    color: #00234B;
+}
+
+
+#check{
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.div1{
+    height: 40px;
+    width: 100%;
+}
+
+
+
+.foot {
+    background-color: #E8E3F4;
+    color: #00234B;
+    width: 100%;
+    float: left;
+}
+
+
+
+.link {
+    text-decoration: none;
+    color: #00234B;
+}
+
+
+.table3 img {
+    height: 80px;
+    width: 85px;
+    margin-top: -40px;
+}
+
+.table3 {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.table4 img {
+    height: 80px;
+    width: 85px;
+    margin-top: -230px;
+}
+
+.table4 {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+#cardbody{
+    padding: 5%;
+}
+
+#doc2center img{
+    margin: auto;
+}
+
+#box{
+    font-size: 170px;
+}
+
+.small2{
+    font-size: 17px;
+    color: #9d9c9c;
+}
+
+#logos{
+    font-size: 18px;
+    color: #9d9c9c;
+}
+
+.redd{
+    color: rgb(207, 82, 82);
+}
+
+.table5 img {
+    height: 80px;
+    width: 85px;
+    margin-top: -40px;
+}
+
+.table5 {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.btn5 {
+    background-color: #E8E3F4;
+    color: #00234B;
+    padding: 7px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.btn5:hover {
+    background-color: #00234B;
+    color: #ffffff;
+
+}
+
+#logos2{
+    font-size: 16px;
+    color: rgb(207, 82, 82);
+}
+
+.mods{
+    margin-left: 70px;
+}

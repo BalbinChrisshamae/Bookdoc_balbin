@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Doc1Style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/5066b12b5a.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <title>Appointment Final</title>
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="Images/logoside.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="profession">Bookdoc</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+
+                <li class="nav-link">
+                    <a href="Doc_Dashboard.html">
+                        <i class='bx bx-home-alt icon'></i>
+                        <span class="text nav-text">Dashboard</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="Doc_Appt1.html">
+                        <i class='bx bxs-calendar icon'  ></i>
+                        <span class="text nav-text">Appointment</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="Doc_SchedAppt.html">
+                        <i class='bx bxs-calendar-plus icon'></i>
+                        <span class="text nav-text">Appt. Schedule</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="Doc_Prof1.html">
+                         <i class='bx bxs-user-circle icon'></i>
+                        <span class="text nav-text">Profile</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="Doc_Rev.html">
+                        <i class='bx bxs-star icon'></i>
+                        <span class="text nav-text">Reviews</span>
+                    </a>
+                </li>
+
+
+
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="Doc_Login.html">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+
+        <div class="cont">
+            <div class="text">  <h4><b>Profile </b></h4></div>
+
+            <div class="container px-4">
+                <div class="row gx-4">
+
+                    <div class="col-xl-4">
+                        <div class="p-3 border" id="cont1">
+                            <center>
+                                <h4><b>Dr. Andrea Budol, MD</b></h4>
+                                <h5><b>Primary Care Doctor</b></h5>
+                                <img class="budol" src="Images/doc2.png">
+                            </center>
+                            <br>
+                            <center> EF Square, Manila North Road, Urdaneta, Pangasinan</center>
+
+
+
+                        </div>
+
+                        <!----->
+                    </div>
+                    <div class="col-xl-8">
+                        <div class="p-3 border" id="cont2">
+
+                            <div class="card-header">
+                                <ul class="nav nav-tabs card-header-tabs">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="Doc_Prof1.html"> <i class="fa-solid fa-circle-user"></i>
+                                            About Me</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="true" href="#"><i
+                                                class="fa-solid fa-gear"></i>
+                                            Settings</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                            <br>
+                            <h5><b>Security</b> Settings</h5>
+                            <br>
+                            <div class="col-12 mb-2">
+
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control form-control-sm" value="mdAndreaBudol@gmail.com"
+                                    required>
+
+                            </div>
+
+                            <form onsubmit="myFunction2()">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-lg-6 mb-2"><label class="form-label"> Current Password</label>
+                                            <input type="password" class="form-control form-control-sm" minlength="6"
+                                                maxlength="8" required>
+                                        </div>
+                                        <div class="col-lg-6 mb-2"><label class="form-label"> New Password</label>
+                                            <input type="password" class="form-control form-control-sm" required
+                                                minlength="6" maxlength="8" required>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <h6><b>Provided Staff Account</b></h6>
+                                        <div class="col-sm-6 mb-3">
+                                            <label class="form-label">Email</label>
+                                            <input type="email" class="form-control form-control-sm" value="BudolEFSstaffacc@email.com" required>
+                                        </div>
+                
+                                        <div class="col-sm-6 mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Password</label>
+                                            <input type="password" class="form-control form-control-sm" id="exampleInputEmail1"
+                                                placeholder="password" value="12345678"
+                                                 required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2 mb-2"> <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </form>
+
+                            <br>
+                            <h5><b>Account</b> Settings</h5>
+                            <form onsubmit="myFunction1()">
+
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-lg-6 mb-2">
+                                            <label class="form-label">Province</label>
+                                            <select class="form-select form-select-sm"
+                                                aria-label="Default select example" required>
+                                                <option selected>Pangasinan</option>
+                                                <option value="1">Ilocos Norte</option>
+                                                <option value="2">Ilocos Sur</option>
+                                                <option value="3">La Union</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6 mb-2"> <label class="form-label">Nationality</label>
+                                            <input type="text" class="form-control form-control-sm" required
+                                                value="Filipino">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-lg-6  mb-2">
+                                            <label class="form-label">Municipality/City</label>
+                                            <input type="text" class="form-control form-control-sm"
+                                                value="Urdaneta City" required>
+                                        </div>
+                                        <div class="col-lg-6  mb-2">
+                                            <label for="exampleInputEmail1" class="form-label">Number</label>
+                                            <input type="tel" class="form-control form-control-sm"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp"
+                                                placeholder="0912-345-6789" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"
+                                                value="0912-345-6789" required>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="col-12 mb-2">
+                                    <label class="form-label">
+                                        Address of Office</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"
+                                        required>EF Square, Manila North Road, Urdaneta, Pangasinan</textarea>
+
+                                </div>
+
+                                <div class="col-sm-12 mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="Male">
+                                        <label class="form-check-label">
+                                            Profile Visibility For Everyone
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-5 mb-2"> <button type="submit" class="btn btn-primary">Save
+                                        Changes</button></div>
+                            </form>
+
+                        
+
+                        </div>
+                        <br>
+                        <div class="p-3 border" id="cont2">
+                            <h5><b>Update About Me</b></h5>
+                            <form  onsubmit="myFunction5()">
+
+                                <div class="col-12 mb-2">
+
+                                    <label class="form-label">About Me</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required>Dr. Budol is a compassionate primary care physician, listening to her patients and keeping a keen eye for details, so as to provide the best possible care. 
+                                    She attended Chuchu University where she graduated magna cum laude with a BS in Biology. She went on to medical school at University of the Philippines. Dr. Andrea completed her internal medicine residency at Jammo School of Medicine at Mount Chuchuness – Dikoalam.
+                                    Dr. Budol has had extensive training in managing various medical co-morbidities and teaching patients how to better understand their health. She is invested in making her patients feel understood and developing a trusting relationship.
+                                </textarea>
+
+                                </div>
+
+                                <div class="col-12 mb-2">
+                                    <label class="form-label">Education</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required>Medical School - Rutgers, The State University of New Jersey, Doctor of Medicine 
+                                    NewYork-Presbyterian Hospital / Weill Cornell Medical Center, Residency in Internal Medicine
+                                    North Shore University Hospital, Internship in Internal Medicine
+                                    Emory University (Bachelor's)
+                                </textarea>
+
+                                </div>
+
+                                <div class="col-12 mb-2">
+                                    <div class="who1" style="overflow-x:auto;">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="4">
+                                                        <center>In-network insurances / HMO Accreditation</center>
+                                                    </th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>PHILHEALTHCARE, INC (PHILCARE)</td>
+                                                    <td>SUN LIFE GREPA FINANCIAL INC.</td>
+                                                    <td>ADVANCED MEDICAL ACCESS PHILIPPINES, INC</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>ASALUS (INTELLICARE)</td>
+                                                    <td>COCOLIFE HEALTHCARE</td>
+                                                    <td>MEDOCARE HEALTH SYSTEMS</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>EASTWEST HEALTHCARE</td>
+                                                    <td>MEDASIA PHILIPPINES</td>
+                                                    <td>HEALTH PLAN PHILIPPINES, INC.</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th scope="row"></th>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td align="right">See more.... <span class="f6">
+                                                            < <button type="button" class="btn4">></button>
+                                                        </span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div class="col-5 mb-2"> <button type="submit" class="btn btn-primary">Save
+                                        Changes</button>
+                                </div>
+                            </form>
+
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-----------------------------end of cont------------------------------->
+            <br>
+            <center>
+                <hr style="height:2px; width: 95%;border-width:0;color:gray;background-color:gray">
+            </center>
+
+
+        </div>
+
+        <div class="navii">
+
+            <nav class="navbar navbar-light navbar-expand-md">
+                <div class="container-fluid"><a class="navbar-brand"></a>
+                    <div id="navcol-1">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="copy">
+                                ⓒ 2022 Bookdoc
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+
+    </section>
+
+
+    <script>
+         function myFunction1() {
+            alert("Your Changes Have Been Saved!!!");
+        }
+        function myFunction2() {
+            alert("Your Password Changed Successfully!!!");
+        }
+        function myFunction5() {
+            alert("Your Changes Have Been Saved!!!");
+        }
+
+         function myFunction() {
+    alert("Edit Record Successfully !!!");
+  }
+
+        const body = document.querySelector('body'),
+            sidebar = body.querySelector('nav'),
+            toggle = body.querySelector(".toggle"),
+            searchBtn = body.querySelector(".search-box"),
+            modeSwitch = body.querySelector(".toggle-switch"),
+            modeText = body.querySelector(".mode-text");
+
+
+        toggle.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+        })
+
+        searchBtn.addEventListener("click", () => {
+            sidebar.classList.remove("close");
+        })
+
+
+
+    </script>
+
+
+</body>
+
+</html>

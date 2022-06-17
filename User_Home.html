@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Final_Demo</title>
+  <link rel="stylesheet" href="css/finalStyle.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/5066b12b5a.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+
+  <div class="find">
+    <div class="navi">
+      <nav class="navbar navbar-light navbar-expand-md">
+        <div class="container-fluid"><a class="navbar-brand" href="#"><img src="Images/logoBook3.png"></a><button
+            class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-1"><span
+              class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+          <div id="navcol-1" class="collapse navbar-collapse text-center">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link active" href="#">HOME</a></li>
+              <li class="nav-item"><a class="nav-link" href="1LandingPage.html">LOGOUT</a></li>
+              <li class="nav-item"><a class="nav-link" href="User_Acc.html"><i class="fa-solid fa-circle-user" id="userr"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <br>
+    <h1 style="font-size:5vw;">Find local doctors who take your insurance</h1>
+    <br>
+    <div class="container" id="cont">
+      <div class="row">
+        <div class="col-lg-4">
+          <input list="datalistOptions" class="form-control" id="exampleDataList1"
+            placeholder="Search here  specialization, doctor...">
+        </div>
+        <datalist id="datalistOptions" class="input">
+          <option value="Primary Care Physician (PCP)">
+          <option value="OB-GYN (Obstetrician-Gynecologist)">
+          <option value="Dermatologist">
+          <option value="Dentist">
+          <option value="Ear, Nose & Throat Doctor (ENT/ Otolaryngologist)">
+          <option value="Eye Doctor">
+          <option value="Psychiatrist">
+          <option value="Orthopedic Surgeon(Orthopedist)">
+          <option value="Acupuncturist">
+          <option value="Cardiologist (Heart Doctor)">
+          <option value="Allergist (Immunologist)">
+          <option value="Gastroenterologist">
+          <option value="Midwife">
+          <option value="Neurosurgeon">
+          <option value="Orthodontist">
+          <option value="Pediatrecian">
+          <option value="Radiologist">
+          <option value="Geriatrician">
+          <option value="Hearing Specialist">
+          <option value="Oncologist">
+          <option value="Plastic Surgeon">
+          <option value="General Practioner">
+        </datalist>
+        <div class="col-lg-2">
+          <input type="text" class="form-control" placeholder="City or ZIP Code">
+        </div>
+        <div class="col-lg-2">
+          <input type="date" class="form-control" min="2022-06-17">
+        </div>
+        <div class="col-lg-3">
+          <input list="browsers" name="browser" id="browser" class="form-control"
+            placeholder="Search insurance carrier...">
+          <datalist id="browsers">
+            <option value="PHILHEALTHCARE, INC (PHILCARE) ">
+            <option value="SUN LIFE GREPA FINANCIAL INC.">
+            <option value="ADVANCED MEDICAL ACCESS PHILIPPINES, INC">
+            <option value="ASALUS (INTELLICARE)">
+            <option value="ASIANLIFE & GENERAL ASSURANCE CORPORATION">
+            <option value="COCOLIFE HEALTHCARE ">
+            <option value="EASTWEST HEALTHCARE">
+            <option value="AVEGA MANAGED CARE, INC">
+            <option value="HEALTH PLAN PHILIPPINES, INC.">
+            <option value="INSULAR HEALTH CARE, INC. (I-CARE)">
+            <option value="MAXICARE HEALTHCARE CORPORATION ">
+            <option value="MEDASIA PHILIPPINES">
+            <option value="MEDOCARE HEALTH SYSTEMS">
+            <option value="VALUE CARE HEALTH SYSTEMS, INC.">
+            <option value="LACSON & LACSON INSURANCE BRKS ">
+          </datalist>
+        </div>
+        <div class="col-lg-1">
+          <a href="User_Search.html"><button class="btn1" type="submit">SEARCH</button></a>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <section class="sec1">
+    <br><br><br>
+    <div>
+
+      <div class="con1">
+        <h2><b>Top-rated primary care doctors</b></h2>
+        <h5><b>90%</b> of patients gave these primary care doctors 5 stars</h5>
+          <a href="User_Search.html">
+            <h6>See more highly-recommended doctors</h6>
+          </a>
+      </div>
+      <div class="con2">
+
+        <div class="media-scroller">
+          <div class="doc1" onclick="location.href='User_ProfDoc.html';">
+            <table border="1" width="100%">
+              <tr>
+                <td><img src="Images/doc2.png"></td>
+                <td> <br><br> <br><span class="recommended">
+                    <i class="fa-regular fa-star"></i> Highly recommended</span></td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <br>
+                  <h4>Andrea Budol, MD</h4>
+                </td>
+              </tr>
+              <td colspan="2">
+                Primary Care Doctor<br>
+                Urdaneta City, Pang.<br>
+                <span class="star"><i class="fa-solid fa-star"></i><b> 4.99</b></span> (320 reviews)<br><br>
+                "My visit was great! Very efficient and everyone is very nice."
+
+            </table>
+          </div>
+
+          <div class="doc1" onclick="location.href='#';">
+            <table border="1" width="100%">
+              <tr>
+                <td><img src="Images/doc1.png"></td>
+                <td> <br><br> <br><span class="recommended">
+                    <i class="fa-regular fa-star"></i> Highly recommended</span>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <br>
+                  <h4>Juan Batumbakal, MD</h4>
+                </td>
+              </tr>
+              <td colspan="2">
+                Primary Care Doctor<br>
+                Dagupan City, Pang.<br>
+                <span class="star"><i class="fa-solid fa-star"></i><b> 4.50</b></span> (120 reviews)<br><br>
+                "Friendly, knowledgeable, quick."
+            </table>
+          </div>
+
+          <div class="doc1" onclick="location.href='#';">
+            <table border="1" width="100%">
+              <tr>
+                <td><img src="Images/doc9.png"></td>
+                <td> <br><br> <br><span class="recommended">
+                    <i class="fa-regular fa-star"></i> Highly recommended</span></td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <br>
+                  <h4>Jom Dimagiba, MD</h4>
+                </td>
+              </tr>
+              <td colspan="2">
+                Primary Care Doctor<br>
+                Urdaneta City, Pang.<br>
+                <span class="star"><i class="fa-solid fa-star"></i><b> 4.49</b></span> (230 reviews)<br><br>
+                "Great service! Friendly staff and very helpful :)"
+
+            </table>
+          </div>
+          <div class="doc1" onclick="location.href='#';">
+            <table border="1" width="100%">
+              <tr>
+                <td><img src="Images/doc3.png"></td>
+                <td> <br><br> <br><span class="recommended">
+                    <i class="fa-regular fa-star"></i> Highly recommended</span></td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <br>
+                  <h4>Marlou Cruz, MD</h4>
+                </td>
+              </tr>
+              <td colspan="2">
+                Primary Care Doctor<br>
+                Carmen, Pang.<br>
+                <span class="star"><i class="fa-solid fa-star"></i><b> 4.59</b></span> (310 reviews)<br><br>
+                "Quick and efficient!"
+
+            </table>
+          </div>
+
+          <div class="doc1" onclick="location.href='#';">
+            <table border="1" width="100%">
+              <tr>
+                <td><img src="Images/Idschool.png"></td>
+                <td> <br><br> <br><span class="recommended">
+                    <i class="fa-regular fa-star"></i> Highly recommended</span></td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <br>
+                  <h4>Nicole Jammo, MD</h4>
+                </td>
+              </tr>
+              <td colspan="2">
+                Primary Care Doctor<br>
+                Vigan City, Ilocos Sur<br>
+                <span class="star"><i class="fa-solid fa-star"></i><b> 4.33</b></span> (230 reviews)<br><br>
+                "My visit was great! Very efficient and everyone is very nice."
+
+            </table>
+          </div>
+
+
+          <div class="doc1">
+
+            <div class="recommended1">
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <br><span class="span1">
+              <h4>There's more!</h4>See more top-rated Primary Care Doctors
+            </span>
+
+            <div class="span2"><a href="Second.html">See more</a></div>
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </section>
+
+
+
+  <section class="sec1">
+
+    <div>
+
+      <div class="con1">
+        <h2><b>Dentists with the shortest wait time</b></h2>
+        <h5><b>91%</b>of patients spent less than 30 minutes in the waiting room for these Dentists</h5>
+        <a href="User_Search.html">
+          <h6>See more dentists with excellent wait time</h6>
+        </a>
+      </div>
+      <div class="con2">
+
+        <div class="media-scroller">
+          <div class="doc1" onclick="location.href='User_ProfDoc.html';">
+            <table border="1" width="100%">
+              <tr>
+                <td><img src="Images/doc5.png"></td>
+                <td> <br><br> <br><span class="recommended">
+                    <i class="fa-regular fa-clock"></i> Excellent wait time</span></td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <br>
+                  <h4>Jnorlynne Duque, DDS</h4>
+                </td>
+              </tr>
+              <td colspan="2">
+                Dentist<br>
+                Urdaneta City, Pang.<br>
+                <span class="star"><i class="fa-solid fa-star"></i><b> 4.99</b></span> (327 reviews)<br><br>
+                "Great first appointment! The doctor was very kind and knowledgable."
+
+            </table>
+          </div>
+
+
+          <div class="doc1" onclick="location.href='#';">
+            <table border="1" width="100%">
+              <tr>
+                <td><img src="Images/doc6.png"></td>
+                <td> <br><br> <br><span class="recommended">
+                    <i class="fa-regular fa-clock"></i> Excellent wait time</span></td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <br>
+                  <h4>Gladine Yape, DDS</h4>
+                </td>
+              </tr>
+              <td colspan="2">
+                Dentist<br>
+                Urdaneta City, Pang.<br>
+                <span class="star"><i class="fa-solid fa-star"></i><b> 4.59</b></span> (320 reviews)<br><br>
+                "My visit was great! Very efficient and everyone is very nice."
+
+            </table>
+          </div>
+
+
+          <div class="doc1" onclick="location.href='#';">
+            <table border="1" width="100%">
+              <tr>
+                <td><img src="Images/doc7.png"></td>
+                <td> <br><br> <br><span class="recommended">
+                    <i class="fa-regular fa-clock"></i> Excellent wait time</span></td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <br>
+                  <h4>CK Blanquera, DDS</h4>
+                </td>
+              </tr>
+              <td colspan="2">
+                Dentist<br>
+                Carmen, Pang.<br>
+                <span class="star"><i class="fa-solid fa-star"></i><b> 4.45</b></span> (420 reviews)<br><br>
+                "Best Dentist and staff, EVER! "
+
+            </table>
+          </div>
+
+
+          <div class="doc1" onclick="location.href='Profile.html';">
+            <table border="1" width="100%">
+              <tr>
+                <td><img src="Images/doc9.png"></td>
+                <td> <br><br> <br><span class="recommended">
+                    <i class="fa-regular fa-clock"></i> Excellent wait time</span></td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <br>
+                  <h4>Andrea Budol, DDS</h4>
+                </td>
+              </tr>
+              <td colspan="2">
+                Dentist<br>
+                Pozurobio, Pangasinan<br>
+                <span class="star"><i class="fa-solid fa-star"></i><b> 4.99</b></span> (320 reviews)<br><br>
+                "The perfect office in general, specially through these. Covid times."
+
+            </table>
+          </div>
+
+
+          <div class="doc1" onclick="location.href='#';">
+            <table border="1" width="100%">
+              <tr>
+                <td><img src="Images/doc10.png"></td>
+                <td> <br><br> <br><span class="recommended">
+                    <i class="fa-regular fa-clock"></i> Excellent wait time</span></td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <br>
+                  <h4>Kenneth Tando, DDS</h4>
+                </td>
+              </tr>
+              <td colspan="2">
+                Dentist<br>
+                Urdaneta City, Pang.<br>
+                <span class="star"><i class="fa-solid fa-star"></i><b> 4.57</b></span> (320 reviews)<br><br>
+                "My visit was great! Very efficient and everyone is very nice."
+
+            </table>
+          </div>
+
+
+          <div class="doc1">
+
+            <div class="recommended1">
+              <i class="fa-regular fa-clock"></i>
+            </div>
+            <br><span class="span1">
+              <h4>There's more!</h4>See more Dentists with excellent wait time
+            </span>
+
+            <div class="span2"><a href="bhdbh">See more</a></div>
+
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="sec2"></div>
+  </section>
+
+
+  <section class="section3">
+    <h6 style="color:white;">dvsgdvd</h6>
+    <div class="spe"><span class="specialty">
+        <h2><b>Top-searched specialties</b></h2>
+      </span>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="docs" onclick="location.href='User_Search.html';"><img src="Images/1.png"></div>
+          <div class="docs" onclick="location.href='User_Search.html';"><img src="Images/2.png"></div>
+          <div class="docs" onclick="location.href='User_Search.html';"><img src="Images/3.png"></div>
+        </div>
+        <div class="col-lg-6">
+          <div class="docs" onclick="location.href='User_Search.html';"><img src="Images/4.png"></div>
+          <div class="docs" onclick="location.href='User_Search.html';"><img src="Images/5.png"></div>
+          <div class="docs" onclick="location.href='User_Search.html';"><img src="Images/6.png"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section4">
+    <br>
+    <p style="font-size:4vw;"><b>Bookdoc Improving Healthcare</p>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="docs1"><img src="Images/d1.svg">
+            <h4><br>Browse providers who <br>take your insurance</h4>
+            <br> <a href="#"><span class="browse1">See specialties</span></a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="docs1"><img src="Images/d2.svg">
+            <h4><br>Read reviews from <br>users</h4>
+            <br> <a href="#"><span class="browse1">See providers</span></a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="docs1"><img src="Images/d3.svg">
+            <h4><br>Book an appointment<br> today, online</h4>
+            <br> <a href="#"><span class="browse1">See availability</span></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <br>
+  </secttion>
+
+
+
+    <section class="section6">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-6">
+            <div class="docs2"><br><br>
+              <h5><b>Bookdoc for Philippines Health System</b></h5>
+              <br>
+              <h2 style="font-size:3vw;"><b>We're trusted by top health systems</b></h2>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="docs2"><img src="Images/partners.svg"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </secttion>
+    
+    <footer class="foot">
+      <div class="container py-4 py-lg-5">
+          <div class="row justify-content-center">
+              <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
+                  <h3 class="fs-6"><b>Quicklinks</b></h3>
+                  <ul class="list-unstyled">
+                      <li><a class="link" href="#">Home</a></li>
+                      <li><a class="link" href="#">Login</a></li>
+                      <li><a class="link" href="#">Register</a></li>
+                  </ul>
+              </div>
+              <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
+                  <h3 class="fs-6"><b>Security</b></h3>
+                  <ul class="list-unstyled">
+                      <li><a class="link" href="#">Terms</a></li>
+                      <li><a class="link" href="#">Privacy</a></li>
+                      <li><a class="link" href="#">Do not sell my personal information</a></li>
+                  </ul>
+              </div>
+              <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
+                  <h3 class="fs-6"><b>Follow Us</b></h3>
+                  <ul class="list-unstyled">
+                      <li><a class="link" href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                      <li><a class="link" href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+                      <li><a class="link" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                  </ul>
+              </div>
+              <div class="col-lg-3 text-center text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start order-lg-last item social">
+                  <div class="fw-bold d-flex align-items-center mb-2"><img src="Images/logoBook3.png"></div>
+                  <p class="copyright">Innovating Philippines Healthcare </p>
+              </div>
+          </div>
+          <hr />
+          <div class="d-flex justify-content-between align-items-center pt-3">
+              <p class="text-mb-0" id="copyright">Copyright © Bookdoc 2022 . All rights reserved.</p>
+          </div>
+      </div>
+  </footer>
+
+
+  
+
+</body>
+
+</html>

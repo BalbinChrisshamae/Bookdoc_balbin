@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+
+}
+
+
+.bod{
+    background-color: #E8E3F4;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #00234B;
+    padding: 20px;
+    min-height: 100vh;
+    background-image: url(../Images/log3.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.sign{
+    color: #00234B;
+}
+
+.form-tel{
+    font-size: 13px;
+}
+
+.navi{
+ background-color: #503e7a;
+}

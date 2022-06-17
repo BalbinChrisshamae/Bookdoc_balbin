@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/StaffStyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/5066b12b5a.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <title>Appointment Final</title>
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="Images/logoside.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Bookdoc</span>
+                    <span class="profession">Staff</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+
+                <li class="nav-link">
+                    <a href="Staff_Dashboard.html">
+                        <i class='bx bx-home-alt icon'></i>
+                        <span class="text nav-text">Dashboard</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="Staff_Appt1.html">
+                        <i class='bx bxs-calendar icon'  ></i>
+                        <span class="text nav-text">Appointment</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="Staff_SchedAppt.html">
+                        <i class='bx bxs-calendar-plus icon'></i>
+                        <span class="text nav-text">Appt. Schedule</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="Staff_Rev.html">
+                        <i class='bx bxs-star icon'></i>
+                        <span class="text nav-text">Reviews</span>
+                    </a>
+                </li>
+
+
+
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="Staff_Login.html">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+
+        <div class="cont">
+            <center>
+                <div class="col-sm-12">
+                    <h4><b>Booked Appointment:<br> Friday, June 17 2020 - 10:30 am</b></h4>
+                </div>
+            </center>
+
+            <br>
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-11 col-xl-11">
+                    <div class="card mb-11">
+                        <div class="card-body d-flex flex-column ">
+                            <h5><b>Patient Profile</b></h5>
+                            <br>
+                            <div class="col-12">
+
+                                <form action="#" onsubmit="myFunction()">
+                                    <div class="row">
+                                        <div class="col-lg-6  mb-2"><label class="form-label">First Name</label>
+                                            <input type="text" class="form-control form-control-sm" 
+                                                value="Mec" required>
+                                        </div>
+                                        <div class="col-lg-6  mb-2"> <label class="form-label">Last Name</label>
+                                            <input type="text" class="form-control form-control-sm" 
+                                                value="Batumbakal" required>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-lg-6  mb-2">
+
+                                        <label class="form-label">Reason for Visit</label>
+                                        <select class="form-select" aria-label="Default select example" required>
+                                            <option selected>Cough</option>
+                                            <option value="">Annual Physical</option>
+                                            <option value="1">Hearing Problems</option>
+                                            <option value="2">Abdominal Pain</option>
+                                            <option value="3">Arthritis</option>
+                                            <option value="4">Weight Loss Consultation</option>
+                                            <option value="5">Anemia</option>
+                                            <option value="6">Anorexia</option>
+                                            <option value="7">Abdominal Cramps</option>
+                                            <option value="8">Breast Pain</option>
+                                            <option value="9">Cancer Screening</option>
+                                            <option value="10">Dehydration</option>
+                                            <option value="11">Cough</option>
+                                            <option value="12">Food Allergy</option>
+                                            <option value="13">Fever</option>
+                                            <option value="14">Diarrhea</option>
+                                        </select>
+
+                                    </div>
+                                    <div class="col-lg-6  mb-2"> <label class="form-label">
+                                            Notes for the doctor's office (optional)</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                            rows="2">The cough is getting worse. Difficulty swallowing. Permanent changes in the sound of the voice.</textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-lg-6 mb-2"><label class="form-label">BirthDate</label>
+                                        <input type="date" class="form-control form-control-sm" 
+                                            value="2003-03-05" required>
+                                    </div>
+                                    <div class="col-lg-6  mb-2"> Im paying for myself
+                                        <label class="form-label">Insurance/HMO Accreditation</label>
+                                        <select class="form-select" aria-label="Default select example" required>
+                                            <option selected>SUN LIFE GREPA FINANCIAL INC.</option>
+                                            <option value="">PHILHEALTHCARE, INC (PHILCARE) </option>
+                                            <option value="1">Im paying for myself</option>
+                                            <option value="2">ADVANCED MEDICAL ACCESS PHILIPPINES, INC</option>
+                                            <option value="3">ASALUS (INTELLICARE)</option>
+                                            <option value="4">ASIANLIFE & GENERAL ASSURANCE CORPORATION</option>
+                                            <option value="5">COCOLIFE HEALTHCARE </option>
+                                            <option value="6">EASTWEST HEALTHCARE</option>
+                                            <option value="7">AVEGA MANAGED CARE, INC</option>
+                                            <option value="8">HEALTH PLAN PHILIPPINES, INC.</option>
+                                            <option value="9">INSULAR HEALTH CARE, INC. (I-CARE)</option>
+                                            <option value="10">MAXICARE HEALTHCARE CORPORATION</option>
+                                            <option value="11">MEDASIA PHILIPPINES</option>
+                                            <option value="12">MEDOCARE HEALTH SYSTEMS</option>
+                                            <option value="13">VALUE CARE HEALTH SYSTEMS, INC.</option>
+                                            <option value="14">LACSON & LACSON INSURANCE BRKS</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-lg-6 mb-2">
+
+                                        <label class="form-label">Sex</label>
+                                        <select class="form-select form-select-sm" aria-label="Default select example"
+                                            required>
+                                            <option selected>Female</option>
+                                            <option value="1">Male</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-6 mb-2"> <label class="form-label">Nationality</label>
+                                        <input type="text" class="form-control form-control-sm" required
+                                            value="Filipino">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <br>
+                            <h5><b>Address</b></h5>
+
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-lg-6  mb-2"><label class="form-label">House/Lot/Bldg. No.,
+                                            Street</label>
+                                        <input type="text" class="form-control form-control-sm">
+                                    </div>
+                                    <div class="col-lg-6  mb-2"> <label class="form-label">Village/Subdivision,
+                                            Brgy</label>
+                                        <input type="text" class="form-control form-control-sm" value="Cayambanan">
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-sm-6 mb-2">
+                                        <label class="form-label">Province</label>
+                                        <select class="form-select form-select-sm" aria-label="Default select example"
+                                            required>
+                                            <option selected>Pangasinan</option>
+                                            <option value="1">Ilocos Norte</option>
+                                            <option value="2">Ilocos Sur</option>
+                                            <option value="3">La Union</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-sm-6 mb-2">
+                                        <label class="form-label">Municipality/City</label>
+                                        <input type="text" class="form-control form-control-sm" value="Urdaneta City"
+                                            required>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-lg-6 mb-2">
+                                        <label for="exampleInputEmail1" class="form-label">Number</label>
+                                        <input type="tel" class="form-control form-control-sm" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="0912-345-6789"
+                                            pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" value="0912-345-6789" required>
+
+                                    </div>
+                                    <div class="col-lg-6 mb-2"><label class="form-label">Email</label>
+                                        <input type="email" class="form-control form-control-sm" value="mec@email.com"
+                                            required>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-sm-2 mb-2"> <button type="submit"
+                                            class="btn btn-primary">Submit</button>
+                                    </div>
+                                    <div class="col-2 mb-2">
+                                        <button type="button" class="btn btn-outline-secondary"
+                                            onclick="location.href='appointmentD.html';">Cancel</button>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            </form>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-----------------------------end of cont------------------------------->
+            <br>
+            <center>
+                <hr style="height:2px; width: 95%;border-width:0;color:gray;background-color:gray">
+            </center>
+
+
+        </div>
+
+        <div class="navii">
+
+            <nav class="navbar navbar-light navbar-expand-md">
+                <div class="container-fluid"><a class="navbar-brand"></a>
+                    <div id="navcol-1">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="copy">
+                                ⓒ 2022 Bookdoc
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+
+    </section>
+
+
+    <script>
+        function myFunction() {
+            alert("Edit Record Successfully !!!");
+        }
+
+        const body = document.querySelector('body'),
+            sidebar = body.querySelector('nav'),
+            toggle = body.querySelector(".toggle"),
+            searchBtn = body.querySelector(".search-box"),
+            modeSwitch = body.querySelector(".toggle-switch"),
+            modeText = body.querySelector(".mode-text");
+
+
+        toggle.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+        })
+
+        searchBtn.addEventListener("click", () => {
+            sidebar.classList.remove("close");
+        })
+
+
+
+    </script>
+
+
+</body>
+
+</html>

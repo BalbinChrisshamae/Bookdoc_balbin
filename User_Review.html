@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Review PAGE</title>
+    <link rel="stylesheet" href="css/reviewStyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/5066b12b5a.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                        <h3><b>Subpatient Form</b></h3>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="User_Review.html">
+                        Patient's Name
+                        <div class="row">
+                            <div class="col-sm-6 mb-3">
+                                <input type="text" class="form-control " placeholder="First" required>
+                            </div>
+
+                            <div class="col-sm-6 mb-3">
+                                <input type="text" class="form-control " placeholder="Last" required>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 mb-3 ">
+                            <label class="form-label">Patient's email (optional)</label>
+                            <input type="email" class="form-control ">
+                        </div>
+
+                        <div class="col-sm-12 mb-3">
+                            <label class="form-label">Patient's date of birth</label>
+                            <input type="date" class="form-control " required>
+                        </div>
+
+                        Are you the parent or legal guardian of this patient?
+                        <div class="who">
+
+
+                            <div class="row">
+                                <div class="col-sm-6 mb-3">
+                                    <input type="radio" class="form-check-input" id="javascript" name="fav_language"
+                                        required> No
+                                </div>
+
+                                <div class="col-sm-6 mb-3">
+                                    <input type="radio" class="form-check-input" id="javascript" name="fav_language"
+                                        required> Yes
+                                </div>
+                            </div>
+                        </div>
+
+                        Patient's sex assigned at birth
+                        <div class="who">
+
+
+                            <div class="row">
+                                <div class="col-sm-6 mb-3">
+                                    <input type="radio" class="form-check-input" id="may" name="mayy" required> Female
+                                </div>
+
+                                <div class="col-sm-6 mb-3">
+                                    <input type="radio" class="form-check-input" id="may" name="mayy" required> Male
+                                </div>
+                            </div>
+                        </div>
+                        <!----bodyyyyy-->
+                        <br>
+                        <button type="submit" class="btn btn-primary">Continue</button>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="navi">
+        <nav class="navbar navbar-light navbar-expand-md">
+            <div class="container-fluid"><a class="navbar-brand" href="User_Home.html"><img src="Images/logoBook3.png"></a>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><i class="fa-solid fa-lock"></i> Secure</li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="reviewhead">
+        <table class="table3">
+            <tr>
+                <td><img src="Images/doc2.png"></td>
+                <td>
+                    <h6><b>Dr. Andrea Budol, MD</b></h6>
+                    Fri, Jun 17 - 10:00 am (GMT+8)<br>
+                    <span class="f7">EF Square, Manila North Road, Urdaneta, Pangasinan<br></span>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+    <section class="bod">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-6 col-xl-4">
+                <div class="card mb-6 border-0">
+                    <div class="card-body d-flex flex-column align-items-center border-0">
+                        <span class="sign">
+                            <h3><b>Review and book</b></h3>
+                        </span></center> <br>
+                        <div class="formm">
+                            <form action="Final.html">
+                                <div class="col-sm-12 mb-3 ">
+                                    Who will be seing the doctor?
+                                    <div class="who">
+                                        <input type="radio" class="form-check-input" name="pat" value="Female" checked>
+                                        Chrissha Balbin (Me)
+                                        <br>
+                                        <button type="button" class="btn2" data-bs-toggle="modal"
+                                            data-bs-target="#staticBackdrop">
+                                            Someone else
+                                        </button>
+
+
+                                        <!-- Modal -->
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Phone number where the doctor can
+                                        reach you</label>
+                                    <input type="tel" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" value="0912-345-6789"
+                                        pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" required>
+                                </div>
+
+
+                                <div class="col-sm-12 mb-3">
+                                    <label class="form-label">HMO Accreditation</label>
+                                    <select class="form-select" aria-label="Default select example" required>
+                                        <option selected>Im paying for myself</option>
+                                        <option value="">PHILHEALTHCARE, INC (PHILCARE) </option>
+                                        <option value="1">SUN LIFE GREPA FINANCIAL INC.</option>
+                                        <option value="2">ADVANCED MEDICAL ACCESS PHILIPPINES, INC</option>
+                                        <option value="3">ASALUS (INTELLICARE)</option>
+                                        <option value="4">ASIANLIFE & GENERAL ASSURANCE CORPORATION</option>
+                                        <option value="5">COCOLIFE HEALTHCARE </option>
+                                        <option value="6">EASTWEST HEALTHCARE</option>
+                                        <option value="7">AVEGA MANAGED CARE, INC</option>
+                                        <option value="8">HEALTH PLAN PHILIPPINES, INC.</option>
+                                        <option value="9">INSULAR HEALTH CARE, INC. (I-CARE)</option>
+                                        <option value="10">MAXICARE HEALTHCARE CORPORATION</option>
+                                        <option value="11">MEDASIA PHILIPPINES</option>
+                                        <option value="12">MEDOCARE HEALTH SYSTEMS</option>
+                                        <option value="13">VALUE CARE HEALTH SYSTEMS, INC.</option>
+                                        <option value="14">LACSON & LACSON INSURANCE BRKS</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-sm-12 mb-3">
+                                    <label class="form-label">Reason for your Visit</label>
+                                    <select class="form-select" aria-label="Default select example" required>
+                                        <option selected>Illness</option>
+                                        <option value="">Annual Physical</option>
+                                        <option value="1">Hearing Problems</option>
+                                        <option value="2">Abdominal Pain</option>
+                                        <option value="3">Arthritis</option>
+                                        <option value="4">Weight Loss Consultation</option>
+                                        <option value="5">Anemia</option>
+                                        <option value="6">Anorexia</option>
+                                        <option value="7">Abdominal Cramps</option>
+                                        <option value="8">Breast Pain</option>
+                                        <option value="9">Cancer Screening</option>
+                                        <option value="10">Dehydration</option>
+                                        <option value="11">Cough</option>
+                                        <option value="12">Food Allergy</option>
+                                        <option value="13">Fever</option>
+                                        <option value="14">Diarrhea</option>
+                                    </select>
+                                </div>
+
+
+                                <div class="col-sm-12 mb-3 ">
+                                    Have you seen Andrea Budol before?
+                                    <div class="who">
+                                        <div class="row">
+                                            <div class="col-sm-6 mb-3">
+                                                <input type="radio" class="form-check-input" id="javascript"
+                                                    name="fav_language" checked> I'm a new patient
+                                            </div>
+
+                                            <div class="col-sm-6 mb-3">
+                                                <input type="radio" class="form-check-input" id="javascript"
+                                                    name="fav_language" required> I've seen this doctor before
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-sm-12 mb-3 ">
+                                    <label class="form-label">Appointment Time</label>
+                                    <div class="who">
+                                        Fri, Jun 17 - 10:00 am (GMT+8)
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="col-sm-12 mb-3 ">
+                            Notes for the doctor's office (optional)
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" checked required>
+                                <label class="form-check-label">
+                                    <div>I have read and agree to the Bookdoc terms of use.
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="col-sm-12 ">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop2">Book Appointment</button>
+                        </div>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+
+
+
+
+        <!-- Button trigger modal -->
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel"><b>Verification</b></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form>
+                <div class="modal-body">
+
+                    To verify that this is you, an <b>OTP</b> is sent to your email and mobile number.
+                    <br><br>
+                    <div class="col-sm-8 mb-3 mx-auto">
+                        <center>Enter the OTP to continue booking</center>
+                        <input type="text" class="form-control" id="exampleFormControlTextarea1" minlength="4"
+                            maxlength="4" required value="1234" style="text-align: center;">
+                            <br>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop1">Continue</button>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <!-- Button trigger modal -->
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel" align="center">
+                            <div class="mods"><img src="Images/doc2.png"><br>
+                                <h2><b>Appointment booked!</b></h2>
+                            </div>
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <center><span class="calendar1"><i class="fa-regular fa-calendar"></i></span><br>
+                           <h5> You're scheduled with <br> <b>Dr. Andrea Budol, MD</b> <br> on <b>Friday, June 17 at 10:00
+                                am</b></h5>
+                                <br>
+                                A confirmation email and text were sent with Reference Number. Check your inboxes now :)
+
+                        </center>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" onclick="window.location.href='User_Acc.html'">Understood</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="navii">
+            <nav class="navbar navbar-light navbar-expand-md">
+                <div class="container-fluid"><a class="navbar-brand" href="#"><span class="copy">ⓒ 2022
+                            Bookdoc</span></a>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+    </section>
+</body>
+
+</html>

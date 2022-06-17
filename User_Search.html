@@ -1,0 +1,1141 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sec_Demo</title>
+    <link rel="stylesheet" href="css/finalStyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/5066b12b5a.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>-->
+
+    <div class="find">
+        <div class="navi">
+            <nav class="navbar navbar-light navbar-expand-md">
+                <div class="container-fluid"><a class="navbar-brand" href="User_Home.html"><img
+                            src="Images/logoBook3.png"></a><button class="navbar-toggler" data-bs-toggle="collapse"
+                        data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span
+                            class="navbar-toggler-icon"></span></button>
+                    <div id="navcol-1" class="collapse navbar-collapse text-center">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="User_Home.html">HOME</a></li>
+                            <li class="nav-item"><a class="nav-link" href="1LandingPage.html">LOGOUT</a></li>
+                            <li class="nav-item"><a class="nav-link" href="User_Acc.html"><i
+                                        class="fa-solid fa-circle-user" id="userr"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container" id="cont">
+            <div class="row">
+                <div class="col-lg-4">
+                    <input list="datalistOptions" class="form-control" id="exampleDataList1"
+                        placeholder="Search here  specialization, doctor...">
+                </div>
+                <datalist id="datalistOptions" class="input">
+                    <option value="Primary Care Physician (PCP)">
+                    <option value="OB-GYN (Obstetrician-Gynecologist)">
+                    <option value="Dermatologist">
+                    <option value="Dentist">
+                    <option value="Ear, Nose & Throat Doctor (ENT/ Otolaryngologist)">
+                    <option value="Eye Doctor">
+                    <option value="Psychiatrist">
+                    <option value="Orthopedic Surgeon(Orthopedist)">
+                    <option value="Acupuncturist">
+                    <option value="Cardiologist (Heart Doctor)">
+                    <option value="Allergist (Immunologist)">
+                    <option value="Gastroenterologist">
+                    <option value="Midwife">
+                    <option value="Neurosurgeon">
+                    <option value="Orthodontist">
+                    <option value="Pediatrecian">
+                    <option value="Radiologist">
+                    <option value="Geriatrician">
+                    <option value="Hearing Specialist">
+                    <option value="Oncologist">
+                    <option value="Plastic Surgeon">
+                    <option value="General Practioner">
+                </datalist>
+                <div class="col-lg-2">
+                    <input type="text" class="form-control" placeholder="City or ZIP Code">
+                </div>
+                <div class="col-lg-2">
+                    <input type="date" class="form-control" min="2022-06-17">
+                </div>
+                <div class="col-lg-3">
+                    <input list="browsers" name="browser" id="browser" class="form-control"
+                        placeholder="Search insurance carrier...">
+                    <datalist id="browsers">
+                        <option value="PHILHEALTHCARE, INC (PHILCARE) ">
+                        <option value="SUN LIFE GREPA FINANCIAL INC.">
+                        <option value="ADVANCED MEDICAL ACCESS PHILIPPINES, INC">
+                        <option value="ASALUS (INTELLICARE)">
+                        <option value="ASIANLIFE & GENERAL ASSURANCE CORPORATION">
+                        <option value="COCOLIFE HEALTHCARE ">
+                        <option value="EASTWEST HEALTHCARE">
+                        <option value="AVEGA MANAGED CARE, INC">
+                        <option value="HEALTH PLAN PHILIPPINES, INC.">
+                        <option value="INSULAR HEALTH CARE, INC. (I-CARE)">
+                        <option value="MAXICARE HEALTHCARE CORPORATION ">
+                        <option value="MEDASIA PHILIPPINES">
+                        <option value="MEDOCARE HEALTH SYSTEMS">
+                        <option value="VALUE CARE HEALTH SYSTEMS, INC.">
+                        <option value="LACSON & LACSON INSURANCE BRKS ">
+                    </datalist>
+                </div>
+                <div class="col-lg-1">
+                    <a href="#"><button class="btn1" type="submit">SEARCH</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <section>
+        <div class="boxx">
+
+            <div class="boxx1">
+
+                <div>
+                    <div class="ft1">
+                        <div class="ft11">
+                            <h3>50 providers</h3>
+                        </div>
+                    </div>
+                    <div class="ft2">
+                        <div class="ft22"><b>Today, June 17 - Sunday, June 26 </b><span class="f6">
+                                < <button type="button" class="btn4">></button>
+                            </span></div>
+                    </div>
+                </div>
+
+                <div class="hre" width="100%">jdnf
+                    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                </div>
+                <div class="box3">
+                    <div class="ft1" onclick="location.href='User_ProfDoc.html';">
+                        <table class="table2">
+                            <tr>
+                                <td><img src="Images/doc2.png"></td>
+                                <td>
+                                    <h4><b>Dr. Andrea Budol, MD</b></h4>
+                                    Primary Care Doctor<br>
+                                    EF Square, Manila North Road, Urdaneta, Pangasinan<br>
+                                    <span class="f1"><i class="fa-solid fa-star"></i>4.99</span> (200)<br><br>
+                                    <span class="f2">New patient appointments • Excellent wait time</span>
+                                    <span class="f3"><br>HMO Accreditation: <b>SUN LIFE GREPA FINANCIAL, INC</b></span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="ft2">
+
+                        <div class="buttons1">
+                            <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                Fri<br>
+                                June 17 <br><br>
+                                17 appts
+                            </button>
+
+                            <button type="button" class="btn2">
+                                Sat<br>
+                                June 18 <br><br>
+                                20 appts
+                            </button>
+
+                            <button type="button" class="btn3">
+                                Sun<br>
+                                June 19 <br><br>
+                                No appts
+                            </button>
+                            <button type="button" class="btn3">
+                                Mon<br>
+                                June 20 <br><br>
+                                No appts
+                            </button>
+                            <button type="button" class="btn2">
+                                Tue<br>
+                                June 21 <br><br>
+                                17 appts
+                            </button>
+                            <br>
+                        </div>
+                        <div class="buttons2">
+                            <button type="button" class="btn3">
+                                Wed<br>
+                                June 22 <br><br>
+                                No appts
+                            </button>
+
+                            <!--- <br>-->
+                            <button type="button" class="btn2">
+                                Thur<br>
+                                June 23 <br><br>
+                                20 appts
+                            </button>
+
+                            <button type="button" class="btn2">
+                                Fri<br>
+                                June 24 <br><br>
+                                15 appts
+                            </button>
+                            <button type="button" class="btn2">
+                                Sat<br>
+                                June 15 <br><br>
+                                17 appts
+                            </button>
+                            <button type="button" class="btn3">
+                                Sun<br>
+                                June 26 <br><br>
+                                No appts
+                            </button>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="staticBackdropLabel">
+                                            <table class="table3">
+                                                <tr>
+                                                    <td><img src="Images/doc2.png"></td>
+                                                    <td>
+                                                        <h6><b>Dr. Andrea Budol, MD</b></h6>
+                                                        Primary Care Doctor<br>
+                                                        EF Square, Manila North Road, Urdaneta, Pangasinan<br>
+                                                        <span class="f1"><i class="fa-solid fa-star"></i>4.99</span>
+                                                        (200)
+                                                        <span class="f3"><br>HMO Accreditation: <b>SUN LIFE GREPA
+                                                                FINANCIAL, INC</b></span>
+                                                    </td>
+                                                </tr>
+
+                                            </table>
+                                            <div class="mods1">
+                                                <h4> <b>Jun 17 - Jun 26 < <button type="button" class="btn4">></button>
+                                                    </b></h4>
+                                                <span class="choose">Choose a time with Dr. Balbin that works for
+                                                    you</span>
+                                            </div>
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+
+
+                                        <div class="time">
+                                            Fri, Jun 17<br>
+                                            <button type="button" class="btn2"
+                                                onclick="window.location.href='User_Review.html'">10:00 am</button>
+                                            <button type="button" class="btn2">10:35 am</button>
+                                            <button type="button" class="btn2">11:00 am</button>
+                                            <button type="button" class="btn2">12:35 am</button>
+                                            <button type="button" class="btn2">01:20 pm</button>
+                                            <button type="button" class="btn2">01:50 pm</button>
+                                            <button type="button" class="btn2">02:20 mp</button>
+                                            <button type="button" class="btn2">more</button>
+
+                                            <br><br>
+                                            Sat, Jun 18<br>
+                                            <button type="button" class="btn2"
+                                                onclick="window.location.href='login.html'">10:30 am</button>
+                                            <button type="button" class="btn2">11:00 am</button>
+                                            <button type="button" class="btn2">12:35 am</button>
+                                            <button type="button" class="btn2">01:20 pm</button>
+                                            <button type="button" class="btn2">01:50 pm</button>
+                                            <button type="button" class="btn2">02:20 mp</button>
+                                            <button type="button" class="btn2">02:50 mp</button>
+                                            <button type="button" class="btn2">more</button>
+                                            <br><br>
+                                            Sun, Jun 19<br>
+                                            <span class="f2">No availability</span>
+                                            <br><br>
+                                            Mon, Jun 20<br>
+                                            <span class="f2">No availability</span>
+
+
+                                            <br><br>
+                                            Tue, Jun 21<br>
+                                            <button type="button" class="btn2"
+                                                onclick="window.location.href='login.html'">10:30 am</button>
+                                            <button type="button" class="btn2">11:00 am</button>
+                                            <button type="button" class="btn2">12:35 am</button>
+                                            <button type="button" class="btn2">01:20 pm</button>
+                                            <button type="button" class="btn2">01:50 pm</button>
+                                            <button type="button" class="btn2">02:20 mp</button>
+                                            <button type="button" class="btn2">02:50 mp</button>
+                                            <button type="button" class="btn2">more</button>
+                                            <br><br>
+
+                                            Wed, Jun 22<br>
+                                            <span class="f2">No availability</span>
+
+                                            <br><br>
+                                            Thur, Jun 23<br>
+                                            <button type="button" class="btn2"
+                                                onclick="window.location.href='login.html'">10:30 am</button>
+                                            <button type="button" class="btn2">11:00 am</button>
+                                            <button type="button" class="btn2">12:35 am</button>
+                                            <button type="button" class="btn2">01:20 pm</button>
+                                            <button type="button" class="btn2">01:50 pm</button>
+                                            <button type="button" class="btn2">02:20 mp</button>
+                                            <button type="button" class="btn2">02:50 mp</button>
+                                            <button type="button" class="btn2">more</button>
+                                            <br><br>
+
+                                            Fri, Jun 24<br>
+                                            <button type="button" class="btn2"
+                                                onclick="window.location.href='login.html'">10:30 am</button>
+                                            <button type="button" class="btn2">11:00 am</button>
+                                            <button type="button" class="btn2">12:35 am</button>
+                                            <button type="button" class="btn2">01:20 pm</button>
+                                            <button type="button" class="btn2">01:50 pm</button>
+                                            <button type="button" class="btn2">02:20 mp</button>
+                                            <button type="button" class="btn2">02:50 mp</button>
+                                            <button type="button" class="btn2">more</button>
+                                            <br><br>
+
+                                            Sat, Jun 25<br>
+                                            <button type="button" class="btn2"
+                                                onclick="window.location.href='login.html'">10:30 am</button>
+                                            <button type="button" class="btn2">11:00 am</button>
+                                            <button type="button" class="btn2">12:35 am</button>
+                                            <button type="button" class="btn2">01:20 pm</button>
+                                            <button type="button" class="btn2">01:50 pm</button>
+                                            <button type="button" class="btn2">02:20 mp</button>
+                                            <button type="button" class="btn2">02:50 mp</button>
+                                            <button type="button" class="btn2">more</button>
+                                            <br><br>
+
+                                            Sun, Jun 26<br>
+                                            <span class="f2">No availability</span>
+                                        </div>
+
+                                        <!--///-->
+                                    </div>
+                                    <div class="modal-footer">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hre" width="100%">jdnf
+                    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                </div>
+
+
+                <div>
+                    <div class="ft1">
+                        <table class="table2">
+                            <tr>
+                                <td><img src="Images/doc1.png"></td>
+                                <td>
+                                    <h4><b>Dr. Juan Batumbakal, MD</b></h4>
+                                    Primary Care Doctor<br>
+                                    Sacred Heart MacArthur Hwy, Urdaneta, Pangasinan<br>
+                                    <span class="f1"><i class="fa-solid fa-star"></i>4.59</span> (350)<br><br>
+                                    <span class="f2">New patient appointments • Excellent wait time</span>
+                                    <span class="f3"><br>HMO Accreditation: <b>SUN LIFE GREPA FINANCIAL, INC</b></span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="ft2">
+
+                        <div class="buttons1">
+                            <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                Fri<br>
+                                June 17 <br><br>
+                                11 appts
+                            </button>
+
+                            <button type="button" class="btn3">
+                                Sat<br>
+                                June 18 <br><br>
+                                No appts
+                            </button>
+
+                            <button type="button" class="btn3">
+                                Sun<br>
+                                June 19 <br><br>
+                                No appts
+                            </button>
+                            <button type="button" class="btn2">
+                                Mon<br>
+                                June 20 <br><br>
+                                20 appts
+                            </button>
+                            <button type="button" class="btn2">
+                                Tue<br>
+                                June 21 <br><br>
+                                15 appts
+                            </button>
+                            <br>
+                        </div>
+                        <div class="buttons2">
+                            <button type="button" class="btn2">
+                                Wed<br>
+                                June 22 <br><br>
+                                21 appts
+                            </button>
+
+                            <!--- <br>-->
+                            <button type="button" class="btn2">
+                                Thur<br>
+                                June 23 <br><br>
+                                17 appts
+                            </button>
+
+                            <button type="button" class="btn2">
+                                Fri<br>
+                                June 24 <br><br>
+                                15 appts
+                            </button>
+                            <button type="button" class="btn3">
+                                Sat<br>
+                                June 15 <br><br>
+                                No appts
+                            </button>
+                            <button type="button" class="btn3">
+                                Sun<br>
+                                June 26 <br><br>
+                                No appts
+                            </button>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="hre" width="100%">jdnf
+                    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                </div>
+
+
+
+                <div>
+                    <div class="ft1">
+                        <table class="table2">
+                            <tr>
+                                <td><img src="Images/doc5.png"></td>
+                                <td>
+                                    <h4><b>Dr. Nicole Jammo, MD</b></h4>
+                                    Primary Care Doctor<br>
+                                    14 Ambrosio St, Urdaneta, 2428 Pangasinan<br>
+                                    <span class="f1"><i class="fa-solid fa-star"></i>4.39</span> (124)<br><br>
+                                    <span class="f2">New patient appointments • Excellent wait time</span>
+                                    <span class="f3"><br>HMO Accreditation: <b>SUN LIFE GREPA FINANCIAL, INC</b></span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="ft2">
+
+                        <div class="buttons1">
+                            <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                Fri<br>
+                                June 17 <br><br>
+                                11 appts
+                            </button>
+
+                            <button type="button" class="btn2">
+                                Sat<br>
+                                June 18 <br><br>
+                                10 appts
+                            </button>
+
+                            <button type="button" class="btn2">
+                                Sun<br>
+                                June 19 <br><br>
+                                10 appts
+                            </button>
+                            <button type="button" class="btn3">
+                                Mon<br>
+                                June 20 <br><br>
+                                No appts
+                            </button>
+                            <button type="button" class="btn2">
+                                Tue<br>
+                                June 21 <br><br>
+                                10 appts
+                            </button>
+                            <br>
+                        </div>
+                        <div class="buttons2">
+                            <button type="button" class="btn3">
+                                Wed<br>
+                                June 22 <br><br>
+                                No appts
+                            </button>
+
+                            <!--- <br>-->
+                            <button type="button" class="btn2">
+                                Thur<br>
+                                June 23 <br><br>
+                                25 appts
+                            </button>
+
+                            <button type="button" class="btn2">
+                                Fri<br>
+                                June 24 <br><br>
+                                15 appts
+                            </button>
+                            <button type="button" class="btn3">
+                                Sat<br>
+                                June 15 <br><br>
+                                No appts
+                            </button>
+                            <button type="button" class="btn2">
+                                Sun<br>
+                                June 26 <br><br>
+                                10 appts
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hre" width="100%">jdnf
+                    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                </div>
+
+                <div>
+                    <div class="ft1">
+                        <table class="table2">
+                            <tr>
+                                <td><img src="Images/Idschool.png"></td>
+                                <td>
+                                    <h4><b>Dr. Issha Espenueva, MD</b></h4>
+                                    Primary Care Doctor<br>
+                                    EF Square, Manila North Road, Urdaneta, Pangasinan<br>
+                                    <span class="f1"><i class="fa-solid fa-star"></i>4.79</span> (130)<br><br>
+                                    <span class="f2">New patient appointments • Excellent wait time</span>
+                                    <span class="f3"><br>HMO Accreditation: <b>SUN LIFE GREPA FINANCIAL, INC</b></span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="ft2">
+
+                        <div class="buttons1">
+                            <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                Fri<br>
+                                June 17 <br><br>
+                                11 appts
+                            </button>
+
+                            <button type="button" class="btn3">
+                                Sat<br>
+                                June 18 <br><br>
+                                No appts
+                            </button>
+
+                            <button type="button" class="btn2">
+                                Sun<br>
+                                June 19 <br><br>
+                                10 appts
+                            </button>
+                            <button type="button" class="btn3">
+                                Mon<br>
+                                June 20 <br><br>
+                                No appts
+                            </button>
+                            <button type="button" class="btn3">
+                                Tue<br>
+                                June 21 <br><br>
+                                No appts
+                            </button>
+                            <br>
+                        </div>
+                        <div class="buttons2">
+                            <button type="button" class="btn2">
+                                Wed<br>
+                                June 22 <br><br>
+                                21 appts
+                            </button>
+
+                            <!--- <br>-->
+                            <button type="button" class="btn2">
+                                Thur<br>
+                                June 23 <br><br>
+                                17 appts
+                            </button>
+
+                            <button type="button" class="btn2">
+                                Fri<br>
+                                June 24 <br><br>
+                                15 appts
+                            </button>
+                            <button type="button" class="btn3">
+                                Sat<br>
+                                June 15 <br><br>
+                                No appts
+                            </button>
+                            <button type="button" class="btn2">
+                                Sun<br>
+                                June 26 <br><br>
+                                10 appts
+                            </button>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="hre" width="100%">jdnf
+                    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                </div>
+
+
+
+                <div>
+                    <div class="ft1">
+                        <table class="table2">
+                            <tr>
+                                <td><img src="Images/doc4.png"></td>
+                                <td>
+                                    <h4><b>Dr. Jom Dimagiba, MD</b></h4>
+                                    Primary Care Doctor<br>
+                                    EF Square, Manila North Road, Urdaneta, Pangasinan<br>
+                                    <span class="f1"><i class="fa-solid fa-star"></i>4.99</span> (200)<br><br>
+                                    <span class="f2">New patient appointments • Excellent wait time</span>
+                                    <span class="f3"><br>HMO Accreditation: <b>SUN LIFE GREPA FINANCIAL, INC</b></span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="ft2">
+
+                        <div class="buttons1">
+                            <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                Fri<br>
+                                June 17 <br><br>
+                                11 appts
+                            </button>
+
+                            <button type="button" class="btn3">
+                                Sat<br>
+                                June 18 <br><br>
+                                No appts
+                            </button>
+
+                            <button type="button" class="btn3">
+                                Sun<br>
+                                June 19 <br><br>
+                                No appts
+                            </button>
+                            <button type="button" class="btn2">
+                                Mon<br>
+                                June 20 <br><br>
+                                20 appts
+                            </button>
+                            <button type="button" class="btn2">
+                                Tue<br>
+                                June 21 <br><br>
+                                15 appts
+                            </button>
+                            <br>
+                        </div>
+                        <div class="buttons2">
+                            <button type="button" class="btn3">
+                                Wed<br>
+                                June 22 <br><br>
+                                No appts
+                            </button>
+
+                            <!--- <br>-->
+                            <button type="button" class="btn2">
+                                Thur<br>
+                                June 23 <br><br>
+                                17 appts
+                            </button>
+
+                            <button type="button" class="btn2">
+                                Fri<br>
+                                June 24 <br><br>
+                                15 appts
+                            </button>
+                            <button type="button" class="btn3">
+                                Sat<br>
+                                June 15 <br><br>
+                                No appts
+                            </button>
+                            <button type="button" class="btn3">
+                                Sun<br>
+                                June 26 <br><br>
+                                No appts
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hre" width="100%">jdnf
+                    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                </div>
+
+
+
+                <div>
+                    <div class="ft1">
+                        <table class="table2">
+                            <tr>
+                                <td><img src="Images/doc6.png"></td>
+                                <td>
+                                    <h4><b>Dr. Gladine Yape, MD</b></h4>
+                                    Primary Care Doctor<br>
+                                    Sacred Heart MacArthur Hwy, Urdaneta, Pangasinan<br>
+                                    <span class="f1"><i class="fa-solid fa-star"></i>4.59</span> (350)<br><br>
+                                    <span class="f2">New patient appointments • Excellent wait time</span>
+                                    <span class="f3"><br>HMO Accreditation: <b>SUN LIFE GREPA FINANCIAL, INC</b></span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="ft2">
+
+                        <div class="buttons1">
+                            <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                Fri<br>
+                                June 17 <br><br>
+                                11 appts
+                            </button>
+
+                            <button type="button" class="btn3">
+                                Sat<br>
+                                June 18 <br><br>
+                                No appts
+                            </button>
+
+                            <button type="button" class="btn3">
+                                Sun<br>
+                                June 19 <br><br>
+                                No appts
+                            </button>
+                            <button type="button" class="btn2">
+                                Mon<br>
+                                June 20 <br><br>
+                                20 appts
+                            </button>
+                            <button type="button" class="btn2">
+                                Tue<br>
+                                June 21 <br><br>
+                                15 appts
+                            </button>
+                            <br>
+                        </div>
+                        <div class="buttons2">
+                            <button type="button" class="btn2">
+                                Wed<br>
+                                June 22 <br><br>
+                                21 appts
+                            </button>
+
+                            <!--- <br>-->
+                            <button type="button" class="btn2">
+                                Thur<br>
+                                June 23 <br><br>
+                                17 appts
+                            </button>
+
+                            <button type="button" class="btn2">
+                                Fri<br>
+                                June 24 <br><br>
+                                15 appts
+                            </button>
+                            <button type="button" class="btn3">
+                                Sat<br>
+                                June 15 <br><br>
+                                No appts
+                            </button>
+                            <button type="button" class="btn3">
+                                Sun<br>
+                                June 26 <br><br>
+                                No appts
+                            </button>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="hre" width="100%">jdnf
+                    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                </div>
+
+
+
+                <div>
+                    <div class="ft1">
+                        <table class="table2">
+                            <tr>
+                                <td><img src="Images/doc7.png"></td>
+                                <td>
+                                    <h4><b>Dr. CK Blanquera, MD</b></h4>
+                                    Primary Care Doctor<br>
+                                    14 Ambrosio St, Urdaneta, 2428 Pangasinan<br>
+                                    <span class="f1"><i class="fa-solid fa-star"></i>4.39</span> (124)<br><br>
+                                    <span class="f2">New patient appointments • Excellent wait time</span>
+                                    <span class="f3"><br>HMO Accreditation: <b>SUN LIFE GREPA FINANCIAL, INC</b></span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="ft2">
+
+                        <div class="buttons1">
+                            <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                Fri<br>
+                                June 17 <br><br>
+                                11 appts
+                            </button>
+
+                            <button type="button" class="btn2">
+                                Sat<br>
+                                June 18 <br><br>
+                                10 appts
+                            </button>
+
+                            <button type="button" class="btn2">
+                                Sun<br>
+                                June 19 <br><br>
+                                10 appts
+                            </button>
+                            <button type="button" class="btn3">
+                                Mon<br>
+                                June 20 <br><br>
+                                No appts
+                            </button>
+                            <button type="button" class="btn2">
+                                Tue<br>
+                                June 21 <br><br>
+                                10 appts
+                            </button>
+                            <br>
+                        </div>
+                        <div class="buttons2">
+                            <button type="button" class="btn3">
+                                Wed<br>
+                                June 22 <br><br>
+                                No appts
+                            </button>
+
+                            <!--- <br>-->
+                            <button type="button" class="btn2">
+                                Thur<br>
+                                June 23 <br><br>
+                                25 appts
+                            </button>
+
+                            <button type="button" class="btn2">
+                                Fri<br>
+                                June 24 <br><br>
+                                15 appts
+                            </button>
+                            <button type="button" class="btn3">
+                                Sat<br>
+                                June 15 <br><br>
+                                No appts
+                            </button>
+                            <button type="button" class="btn2">
+                                Sun<br>
+                                June 26 <br><br>
+                                10 appts
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hre" width="100%">jdnf
+                    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                </div>
+
+                <div>
+                    <div class="ft1">
+                        <table class="table2">
+                            <tr>
+                                <td><img src="Images/doc8.png"></td>
+                                <td>
+                                    <h4><b>Dr. John Andaya, MD</b></h4>
+                                    Primary Care Doctor<br>
+                                    EF Square, Manila North Road, Urdaneta, Pangasinan<br>
+                                    <span class="f1"><i class="fa-solid fa-star"></i>4.79</span> (130)<br><br>
+                                    <span class="f2">New patient appointments • Excellent wait time</span>
+                                    <span class="f3"><br>HMO Accreditation: <b>SUN LIFE GREPA FINANCIAL, INC</b></span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="ft2">
+
+                        <div class="buttons1">
+                            <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                Fri<br>
+                                June 17 <br><br>
+                                11 appts
+                            </button>
+
+                            <button type="button" class="btn3">
+                                Sat<br>
+                                June 18 <br><br>
+                                No appts
+                            </button>
+
+                            <button type="button" class="btn2">
+                                Sun<br>
+                                June 19 <br><br>
+                                10 appts
+                            </button>
+                            <button type="button" class="btn3">
+                                Mon<br>
+                                June 20 <br><br>
+                                No appts
+                            </button>
+                            <button type="button" class="btn3">
+                                Tue<br>
+                                June 21 <br><br>
+                                No appts
+                            </button>
+                            <br>
+                        </div>
+                        <div class="buttons2">
+                            <button type="button" class="btn2">
+                                Wed<br>
+                                June 22 <br><br>
+                                21 appts
+                            </button>
+
+                            <!--- <br>-->
+                            <button type="button" class="btn2">
+                                Thur<br>
+                                June 23 <br><br>
+                                17 appts
+                            </button>
+
+                            <button type="button" class="btn2">
+                                Fri<br>
+                                June 24 <br><br>
+                                15 appts
+                            </button>
+                            <button type="button" class="btn3">
+                                Sat<br>
+                                June 15 <br><br>
+                                No appts
+                            </button>
+                            <button type="button" class="btn2">
+                                Sun<br>
+                                June 26 <br><br>
+                                10 appts
+                            </button>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="hre" width="100%">jdnf
+                    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                </div>
+
+
+
+                <div>
+                    <div class="ft1">
+                        <table class="table2">
+                            <tr>
+                                <td><img src="Images/doc10.png"></td>
+                                <td>
+                                    <h4><b>Dr. Danny Corla, MD</b></h4>
+                                    Primary Care Doctor<br>
+                                    EF Square, Manila North Road, Urdaneta, Pangasinan<br>
+                                    <span class="f1"><i class="fa-solid fa-star"></i>4.99</span> (200)<br><br>
+                                    <span class="f2">New patient appointments • Excellent wait time</span>
+                                    <span class="f3"><br>HMO Accreditation: <b>SUN LIFE GREPA FINANCIAL, INC</b></span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="ft2">
+
+                        <div class="buttons1">
+                            <button type="button" class="btn2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                Fri<br>
+                                June 17 <br><br>
+                                11 appts
+                            </button>
+
+                            <button type="button" class="btn3">
+                                Sat<br>
+                                June 18 <br><br>
+                                No appts
+                            </button>
+
+                            <button type="button" class="btn3">
+                                Sun<br>
+                                June 19 <br><br>
+                                No appts
+                            </button>
+                            <button type="button" class="btn2">
+                                Mon<br>
+                                June 20 <br><br>
+                                20 appts
+                            </button>
+                            <button type="button" class="btn2">
+                                Tue<br>
+                                June 21 <br><br>
+                                15 appts
+                            </button>
+                            <br>
+                        </div>
+                        <div class="buttons2">
+                            <button type="button" class="btn3">
+                                Wed<br>
+                                June 22 <br><br>
+                                No appts
+                            </button>
+
+                            <!--- <br>-->
+                            <button type="button" class="btn2">
+                                Thur<br>
+                                June 23 <br><br>
+                                17 appts
+                            </button>
+
+                            <button type="button" class="btn2">
+                                Fri<br>
+                                June 24 <br><br>
+                                15 appts
+                            </button>
+                            <button type="button" class="btn3">
+                                Sat<br>
+                                June 15 <br><br>
+                                No appts
+                            </button>
+                            <button type="button" class="btn3">
+                                Sun<br>
+                                June 26 <br><br>
+                                No appts
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hre" width="100%">jdnf
+                    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                </div>
+
+
+
+
+
+                <!--
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.6312729230594!2d120.56853001464192!3d15.980620788935743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33913fb386d4d6fd%3A0xb7e5b64066ab4023!2sUrdaneta%20Sacred%20Heart%20Hospital!5e0!3m2!1sen!2sph!4v1654055732206!5m2!1sen!2sph"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>////////////////////////////////////////////////////////////////////////////-->
+
+            </div>
+
+            <div class="boxx2">
+
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1K7_O0yzP4nkz7oK8lnA5uYPYO2iiL8c&ehbc=2E312F"
+                width="100%" height="100%"></iframe>
+
+
+
+
+            </div>
+        </div>
+
+    </section>
+    <div class="num">
+        <div class="num1">
+            <div class="num3">1</div>
+            <div class="num2">2</div>
+            <div class="num2">3</div>
+            <div class="num2">4</div>
+            <div class="num2">5</div>
+            <div class="num2">6</div>
+            <div class="num2">7</div>
+            <div class="num2">8</div>
+            <div class="num2">9</div>
+            <div class="num2">10</div>
+        </div>
+    </div>
+
+
+
+    <footer class="foot">
+        <div class="container py-4 py-lg-5">
+            <div class="row justify-content-center">
+                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
+                    <h3 class="fs-6"><b>Quicklinks</b></h3>
+                    <ul class="list-unstyled">
+                        <li><a class="link" href="User_Home.html">Home</a></li>
+                        <li><a class="link" href="#">Login</a></li>
+                        <li><a class="link" href="#">Register</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
+                    <h3 class="fs-6"><b>Security</b></h3>
+                    <ul class="list-unstyled">
+                        <li><a class="link" href="#">Terms</a></li>
+                        <li><a class="link" href="#">Privacy</a></li>
+                        <li><a class="link" href="#">Do not sell my personal information</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
+                    <h3 class="fs-6"><b>Follow Us</b></h3>
+                    <ul class="list-unstyled">
+                        <li><a class="link" href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                        <li><a class="link" href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+                        <li><a class="link" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+                <div
+                    class="col-lg-3 text-center text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start order-lg-last item social">
+                    <div class="fw-bold d-flex align-items-center mb-2"><img src="Images/logoBook3.png"></div>
+                    <p class="copyright">Innovating Philippines Healthcare </p>
+                </div>
+            </div>
+            <hr />
+            <div class="d-flex justify-content-between align-items-center pt-3">
+                <p class="text-mb-0" id="copyright">Copyright © Bookdoc 2022 . All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>

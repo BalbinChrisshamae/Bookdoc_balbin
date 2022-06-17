@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Admin1Style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/5066b12b5a.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <title>Appointment Final</title>
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="Images/logoside.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Bookdoc</span>
+                    <span class="profession">Admin</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+
+                <li class="nav-link">
+                    <a href="Admin_Dashboard.html">
+                        <i class='bx bx-home-alt icon'></i>
+                        <span class="text nav-text">Dashboard</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="Admin_Doctors.html">
+                        <i class='bx bxs-user-plus icon'></i>
+                        <span class="text nav-text">Doctors</span>
+                    </a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="Admin_Patients.html">
+                        <i class='bx bxs-user icon'></i>
+                        <span class="text nav-text">Patients</span>
+                    </a>
+                </li>
+
+            
+
+
+
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="Admin_Login.html">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+
+        <div class="cont">
+            <div class="text">
+                <h4><b>Provider's Profile </b></h4>
+            </div>
+
+            <div class="container px-4">
+                <div class="row gx-4">
+
+                    <div class="col-xl-4">
+                        <div class="p-3 border" id="cont1">
+                            <center>
+                                <h4><b>Dr. Andrea Budol, MD</b></h4>
+                                <h5><b>Primary Care Doctor</b></h5>
+                                <img class="budol" src="Images/doc2.png">
+                            </center>
+                            <br>
+                            <center> EF Square, Manila North Road, Urdaneta, Pangasinan</center>
+
+
+
+                        </div>
+                        <br>
+
+                        <div class="col-xl-12">
+                            <div class="p-3 border" id="cont1">
+                                <div class="row">
+                                    <div class="col-sm-6 mb-2">
+                                        <i class="fa-regular fa-clock" id="logos"></i> Excellent wait time<br>
+                                        <span class="litle">91% of patients waited less than 30 minutes</span>
+                                    </div>
+            
+                                    <div class="col-sm-6 mb-2">
+                                        <i class="fa-solid fa-arrow-rotate-left" id="logos"></i> Patients often return<br>
+                                        <span class="litle">More patients return than other providers in the area</span>
+                                    </div>
+                                </div>
+
+                               <br>
+                                <div class="col-sm-12">
+                                    <center>
+                                    <h5><b>Overall Rating</b></h5>
+                                    <h1 style="font-size:5vw;">4.99</h1>
+                                    <i class="fa-solid fa-star" id="logos1"></i>
+                                    <i class="fa-solid fa-star" id="logos1"></i>
+                                    <i class="fa-solid fa-star" id="logos1"></i>
+                                    <i class="fa-solid fa-star" id="logos1"></i>
+                                    <i class="fa-solid fa-star" id="logos1"></i><br>
+                                    <a href="Doc_Rev.html">
+                                        <button class="btn3">
+                                            <h5>200 reviews</h5>
+                                        </button></a></center>
+        
+                                </div>
+    
+                                
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-8">
+                        <div class="p-3 border" id="cont2">
+
+                            <div class="card-header">
+                                <ul class="nav nav-tabs card-header-tabs">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="true" href="#"> <i
+                                                class="fa-solid fa-circle-user"></i> About</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="Admin_DocProfRev.html"> <i class="fa-solid fa-star"></i>
+                                            Reviews</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="Admin_DocProfAppt.html"><i class="fa-solid fa-calendar-days"></i>
+                                            Appointment</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="Admin_DocProfAddAppt.html"> <i class="fa-solid fa-calendar-plus"></i>
+                                            Appt. Schedule</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="Admin_DocProf2.html"><i class="fa-solid fa-gear"></i>
+                                            Settings</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+                            <br>
+                            <h6 style="color:red; font-weight: bold;"><input class="form-check-input" type="checkbox" value="" checked
+                                                    id="flexCheckDefault"> Paid for subscription: Month of June</h6>
+
+                            <br>
+                            <h6><b>Provided Staff Account</b></h6>
+                            <div class="row">
+                                <div class="col-sm-6 mb-3">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" class="form-control form-control-sm" value="BudolEFSstaffacc@email.com" required>
+                                </div>
+        
+                                <div class="col-sm-6 mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="exampleInputEmail1"
+                                        placeholder="password" value="12345678"
+                                         required>
+                                </div>
+                            </div>
+
+                            <h5><b>About</b></h5>
+                            <div class="abt"> Dr. Budol is a compassionate primary care physician, listening to her
+                                patients and keeping a keen eye
+                                for details, so as to provide the best possible care.<br><br>
+
+                                She attended Chuchu University where she graduated magna cum laude with a BS in
+                                Biology. She went on to medical school at University of the Philippines. Dr. Andrea
+                                completed
+                                her internal medicine residency at Jammo School of Medicine at Mount Chuchuness –
+                                Dikoalam.<br><br>
+
+                                Dr. Alex has had extensive training in managing various medical co-morbidities and
+                                teaching
+                                patients how to better understand their health. She is invested in making her patients
+                                feel
+                                understood and developing a trusting relationship.</div>   <br>
+
+                            <h5><b>Education</b></h5>
+                            <div class="abt">
+                                Medical School - Rutgers, The State University of New Jersey, Doctor of Medicine<br>
+                                NewYork-Presbyterian Hospital / Weill Cornell Medical Center, Residency in Internal
+                                Medicine<br>
+                                North Shore University Hospital, Internship in Internal Medicine<br>
+                                Emory University (Bachelor's)
+                            </div>
+                            <br>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-sm-6 mb-2">
+                                        <h5><b>Specialties</b></h5>
+                                        Internist <br>
+                                        Primary Care Doctor
+                                    </div>
+
+                                    <div class="col-sm-6 mb-2">
+                                        <h5><b>NPI number</b></h5>
+                                        1020304050
+                                    </div>
+                                </div>
+
+                            </div>
+                            <br>
+                            <h5><b>In-network insurances</b></h5>
+                            <div class="abt">
+                                <div class="col-12">
+
+                                    <div class="row">
+                                        <div class="col-sm-6 mb-2">
+                                            <img src="Images/sunlife.jpg" id="insurancelogo">Sun Life Grepa Financial
+                                            Inc.
+                                        </div>
+
+                                        <div class="col-sm-6 mb-2">
+                                            <img src="Images/philhealth.jfif" id="insurancelogo">Philippine Health
+                                            Insurance
+                                            Corporation
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <br>
+                                <div class="col-12">
+
+                                    <div class="row">
+                                        <div class="col-sm-6 mb-2">
+                                            <img src="Images/asian.jfif" id="insurancelogos">Asiancare Health Systems,
+                                            Inc.
+                                        </div>
+
+                                        <div class="col-sm-6 mb-2">
+                                            <b>50+</b> more in-network plans/ HMO Accreditation
+                                            <button class="btn5" type="button">View All</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <br>
+                            <h5><b>Office Location</b></h5>
+
+                            <div class="col-12">
+
+                                <div class="row">
+                                    <div class="col-sm-8">
+            
+            
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.76701806057!2d120.5691165148572!3d15.973538688940106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33913fad0890162b%3A0xcc7790b82eafaf3c!2sEF%20Square%2C%20Manila%20N%20Rd%2C%20Urdaneta%2C%20Pangasinan!5e0!3m2!1sen!2sph!4v1654222558405!5m2!1sen!2sph"
+                                            width="100%" height="250px" style="border:0;" allowfullscreen="" loading="lazy"
+                                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+            
+                                    <div class="col-sm-4">
+                                        <b>EF Square, Manila North Road,</b>
+                                        Urdaneta, Pangasinan
+            
+                                        <button class="btn5" type="button">Get Directions</button>
+                                    </div>
+                                </div>
+                                <br>
+            
+                            </div>
+                            <!--<div class="col-12">
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+
+
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <h6><b>Full Name</b></h6>
+                                            </div>
+
+                                            <div class="col-6">
+                                                <h6><b>Full Name</b></h6>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                fjhjvv
+                                            </div>
+
+                                            <div class="col-6">
+                                                fvbhvevh
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div> -->
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-----------------------------end of cont------------------------------->
+            <br>
+            <center>
+                <hr style="height:2px; width: 95%;border-width:0;color:gray;background-color:gray">
+            </center>
+
+
+        </div>
+
+        <div class="navii">
+
+            <nav class="navbar navbar-light navbar-expand-md">
+                <div class="container-fluid"><a class="navbar-brand"></a>
+                    <div id="navcol-1">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="copy">
+                                ⓒ 2022 Bookdoc
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+
+    </section>
+
+
+    <script>
+        function myFunction1() {
+            alert("Your Changes Have Been Saved!!!");
+        }
+        function myFunction2() {
+            alert("Your Password Changed Successfully!!!");
+        }
+        function myFunction5() {
+            alert("Your Changes Have Been Saved!!!");
+        }
+
+        function myFunction() {
+            alert("Edit Record Successfully !!!");
+        }
+
+        const body = document.querySelector('body'),
+            sidebar = body.querySelector('nav'),
+            toggle = body.querySelector(".toggle"),
+            searchBtn = body.querySelector(".search-box"),
+            modeSwitch = body.querySelector(".toggle-switch"),
+            modeText = body.querySelector(".mode-text");
+
+
+        toggle.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+        })
+
+        searchBtn.addEventListener("click", () => {
+            sidebar.classList.remove("close");
+        })
+
+
+
+    </script>
+
+
+</body>
+
+</html>
